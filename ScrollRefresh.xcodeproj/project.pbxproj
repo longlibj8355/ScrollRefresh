@@ -14,6 +14,8 @@
 		B08F9FF71AD02FB400A44C5C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B08F9FF61AD02FB400A44C5C /* Images.xcassets */; };
 		B08F9FFA1AD02FB400A44C5C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B08F9FF81AD02FB400A44C5C /* LaunchScreen.xib */; };
 		B08FA0061AD02FB400A44C5C /* ScrollRefreshTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B08FA0051AD02FB400A44C5C /* ScrollRefreshTests.m */; };
+		B08FA0141AD0307000A44C5C /* EGORefreshTableFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = B08FA0101AD0307000A44C5C /* EGORefreshTableFooterView.m */; };
+		B08FA0151AD0307000A44C5C /* EGORefreshTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = B08FA0121AD0307000A44C5C /* EGORefreshTableHeaderView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,11 @@
 		B08F9FFF1AD02FB400A44C5C /* ScrollRefreshTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScrollRefreshTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B08FA0041AD02FB400A44C5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B08FA0051AD02FB400A44C5C /* ScrollRefreshTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScrollRefreshTests.m; sourceTree = "<group>"; };
+		B08FA0101AD0307000A44C5C /* EGORefreshTableFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGORefreshTableFooterView.m; sourceTree = "<group>"; };
+		B08FA0111AD0307000A44C5C /* EGORefreshTableFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGORefreshTableFooterView.h; sourceTree = "<group>"; };
+		B08FA0121AD0307000A44C5C /* EGORefreshTableHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGORefreshTableHeaderView.m; sourceTree = "<group>"; };
+		B08FA0131AD0307000A44C5C /* EGORefreshTableHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGORefreshTableHeaderView.h; sourceTree = "<group>"; };
+		B08FA0161AD030AE00A44C5C /* EGOViewCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGOViewCommon.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +88,7 @@
 		B08F9FE81AD02FB400A44C5C /* ScrollRefresh */ = {
 			isa = PBXGroup;
 			children = (
+				B08FA00F1AD0304E00A44C5C /* EGORefresh */,
 				B08F9FED1AD02FB400A44C5C /* AppDelegate.h */,
 				B08F9FEE1AD02FB400A44C5C /* AppDelegate.m */,
 				B08F9FF01AD02FB400A44C5C /* ViewController.h */,
@@ -117,6 +125,18 @@
 				B08FA0041AD02FB400A44C5C /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B08FA00F1AD0304E00A44C5C /* EGORefresh */ = {
+			isa = PBXGroup;
+			children = (
+				B08FA0161AD030AE00A44C5C /* EGOViewCommon.h */,
+				B08FA0101AD0307000A44C5C /* EGORefreshTableFooterView.m */,
+				B08FA0111AD0307000A44C5C /* EGORefreshTableFooterView.h */,
+				B08FA0121AD0307000A44C5C /* EGORefreshTableHeaderView.m */,
+				B08FA0131AD0307000A44C5C /* EGORefreshTableHeaderView.h */,
+			);
+			name = EGORefresh;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,6 +241,8 @@
 			files = (
 				B08F9FF21AD02FB400A44C5C /* ViewController.m in Sources */,
 				B08F9FEF1AD02FB400A44C5C /* AppDelegate.m in Sources */,
+				B08FA0151AD0307000A44C5C /* EGORefreshTableHeaderView.m in Sources */,
+				B08FA0141AD0307000A44C5C /* EGORefreshTableFooterView.m in Sources */,
 				B08F9FEC1AD02FB400A44C5C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
